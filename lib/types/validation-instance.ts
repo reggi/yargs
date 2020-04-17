@@ -24,6 +24,11 @@ export interface ValidationInstance {
   requiredArguments (argv: Arguments): void
   reset (localLookup: Dictionary): ValidationInstance
   unfreeze (): void
-  unknownArguments (argv: Arguments, aliases: DetailedArguments['aliases'], positionalMap: Dictionary): void
+  unknownArguments (
+    argv: Arguments,
+    aliases: DetailedArguments['aliases'],
+    positionalMap: Dictionary,
+    isDefaultCommand: boolean
+  ): void
   unknownCommands (argv: Arguments): boolean
 }

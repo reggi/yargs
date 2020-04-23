@@ -196,7 +196,7 @@ var argv = require('yargs')
 <a name="command"></a>
 .command(cmd, desc, [builder], [handler])
 -----------------------------------------
-.command(cmd, desc, [module])
+.command(cmd, desc, [builder])
 -----------------------------
 .command(module)
 ----------------
